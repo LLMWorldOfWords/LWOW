@@ -100,3 +100,11 @@ _Abramski, K., Lavorati, C., Rossetti, G., & Stella, M. (2024). LLM-Generated Wo
 
 _De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert, M., & Storms, G. (2019). The “Small World of Words” English word association norms for over 12,000 cue words. Behavior research methods, 51, 987-1006._ [Small World of Words Project](https://smallworldofwords.org/en/project/)
 
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Left-aligned logo -->
+  <img src="logo_unitn.png" alt="Unitn Logo" width="200" />
+  
+  <!-- Right-aligned logo -->
+  <img src="logo_isti.png" alt="ISTI Logo" width="200" />
+</div>
+
