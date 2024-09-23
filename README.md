@@ -105,6 +105,5 @@ _De Deyne, S., Navarro, D. J., Perfors, A., Brysbaert, M., & Storms, G. (2019). 
   <img src="logo_unitn.png" alt="Unitn Logo" width="200" />
   
   <!-- Right-aligned logo -->
-  <img src="logo_isti.png" alt="ISTI Logo" width="200" />
+  <img src="logo_isti.png" alt="ISTI Logo" width="200" style="pointer-events: none;"/>
 </div>
-
