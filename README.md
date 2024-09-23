@@ -78,6 +78,7 @@ The datasets were validated using data from the Semantic Priming Project, which 
 
 ### Funding & Legal
 [TO DO]
+Riccardo Improta is supported by the COGNOSCO grant funded by Università di Trento (Grant ID: PS 22_27).
 
 ### Contacts
 
