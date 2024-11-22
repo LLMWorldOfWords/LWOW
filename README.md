@@ -1,4 +1,4 @@
-# LLM World of Words
+# LLM World Of Words
 _Katherine Elizabeth Abramski_, _Riccardo Improta_, _Giulio Rossetti_, _Massimo Stella_
 
 <p align="center">
