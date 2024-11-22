@@ -1,4 +1,4 @@
-# LLM world of words
+# LLM World of Words
 _Katherine Elizabeth Abramski_, _Riccardo Improta_, _Giulio Rossetti_, _Massimo Stella_
 
 <p align="center">
@@ -37,7 +37,7 @@ These associations were generated either via API or locally, depending on the LL
 
 The dataset is modeled after the SWOW English word association norms, using the same 12,282 cue words. Each cue word is repeated 100 times, with 3 responses generated per cue.
 
-For some models, participant profiles from the original SWOW experiment were also provided to allow investigation of how well the LLMs could simulate specific demographics.
+For some models, participant profiles from the original [SWOW experiment](https://smallworldofwords.org/en/project/) were also provided to allow investigation of how well the LLMs could simulate specific demographics.
 
 The LLMs were prompted with the following task:
 ```
