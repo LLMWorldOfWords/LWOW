@@ -25,7 +25,7 @@ Free associations are spontaneous mental connections between words or ideas. Whe
 
 <p align="center">
   <img src="Free_associations.jpeg" alt="validation" width="400"/>
-  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing meaning contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes).</small></figcaption>
+  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing meaning contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes). [4]</small></figcaption>
 </p>
 
 ### How can they be used?
@@ -122,6 +122,8 @@ Massimo Stella : massimo.stella-1@unitn.it
 [2] _Abramski, K., et al. (2024). LLM-Generated Word Association Norms. In HHAI 2024: Hybrid Human AI Systems for the Social Good (pp. 3-12). IOS Press._
 
 [3] _De Deyne, S., et al. (2019). The “Small World of Words” English word association norms for over 12,000 cue words. Behavior research methods, 51, 987-1006._ [Small World of Words Project](https://smallworldofwords.org/en/project/)
+
+[4] _Stella, M. (2019). Modelling early word acquisition through multiplex lexical networks and machine learning. Big Data and Cognitive Computing, 3(1), 10._
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="logo_isti.png" alt="ISTI Logo" width="300" style="pointer-events: none;"/>
