@@ -56,16 +56,9 @@ Constraints:
 Example:
 Input: sea
 Output: water,beach,sun"
-
 ```
 
 This prompt was repeated 100 times for each cue word, resulting in a dataset of 11,545 unique cues words and 3,463,500 total responses for each LLM.
-
-This validation is based on a simple test: when a word (like "doctor") is linked to a related word (like "nurse"), the related word becomes much more "activated" in the network compared to when it’s paired with an unrelated word (like "tree").
-<strong>Figure 1:</strong> Boxplots illustrating the validation performance of the LDT model across different datasets.
-
-
-
 
 ------
 
