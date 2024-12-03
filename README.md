@@ -3,7 +3,7 @@
 
 
   <img src="logo_unitn.png" alt="Unitn Logo" width="200" />
-   <img src="logo_unipi.png" alt="Unipi Logo" width="200" />
+   <img src="logo_unipi.png" alt="Unipi Logo" width="100" />
   <img src="CogNoscoLab_Logo.png" alt="CogNoscoLab Logo.png" width="60" />
 
 </div>
