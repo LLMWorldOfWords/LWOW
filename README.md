@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="logo_isti.png" alt="ISTI Logo" width="300" style="pointer-events: none;"/>
+  <img src="logo-composto-CNR-ISTI.png" alt="ISTI Logo" width="300" style="pointer-events: none;"/>
   <img src="logo_unitn.png" alt="Unitn Logo" width="200" />
   <img src="logo_unipi.png" alt="Unipi Logo" width="120" />
   <img src="CogNoscoLab_Logo.png" alt="CogNoscoLab Logo.png" width="100" />
