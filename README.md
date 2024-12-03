@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="logo_unipi.png" alt="Unipi Logo" width="120" />
   <img src="logo-composto-CNR_ISTI.png" alt="ISTI Logo" width="450" />
-  <img src="logo_unitn.png" alt="Unitn Logo" width="180" />
+  <img src="logo_unitn.png" alt="Unitn Logo" width="160" />
   <img src="CogNoscoLab_Logo.png" alt="CogNoscoLab Logo.png" width="100" />
 </div>
 
