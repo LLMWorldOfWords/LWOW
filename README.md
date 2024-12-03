@@ -5,6 +5,7 @@
   <img src="CogNoscoLab_Logo.png" alt="CogNoscoLab Logo.png" width="100" />
 </div>
 
+------
 
 # LLM World Of Words (LWOW)
 _Katherine Abramski_, _Riccardo Improta_, _Giulio Rossetti_, _Massimo Stella_
