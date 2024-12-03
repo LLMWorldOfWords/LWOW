@@ -46,7 +46,8 @@ To demonstrate how this dataset can be used to investigate gender biases in LLMs
 The free associations were generated (either via API or locally, depending on the LLM) by providing each LLM with a set of cue words and the following prompt:
 
 ```
-"Task:- You will be provided with an input word: write the first 3 words you associate to it separated by a comma.
+"Task:- You will be provided with an input word:
+- Write the first 3 words you associate to it separated by a comma.
 - No additional output text is allowed.
                
 Constraints:
@@ -59,6 +60,11 @@ Output: water,beach,sun"
 ```
 
 This prompt was repeated 100 times for each cue word, resulting in a dataset of 11,545 unique cues words and 3,463,500 total responses for each LLM.
+
+### Modification of the SWOW dataset to align with the LWOW datasets
+In order to facilitate comparisons between humans and LLMs, we further processed the SWOW dataset to be aligned with the processing applied to the LWOW datasets. Due to the licensing of the original SWOW dataset, we do not provide this modified SWOW dataset in this repository, however this dataset, along with all subsequent analyses and output, can be reproduce by running the code as follows:
+
+
 
 ------
 
