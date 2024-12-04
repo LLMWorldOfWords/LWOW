@@ -22,11 +22,11 @@ The "LLM World of Words" (LWOW) is a collection of datasets of English free asso
 Free associations are implicit mental connections between words or concepts. They are typically accessed by presenting humans (or AI agents) with a cue word and then asking them to respond with the first words that come to mind. The responses represent implicit associations that connect different concepts in the mind, reflecting the semantic representations that underly patterns of thought, memory, and language. For example, given the cue word "tree", a common free association response might be "leaf", reflecting the associative mental relation between these two concepts.
 
 ### How can they be used?
-Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying linguistic and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
+Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying linguistic and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses [1]. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
 
 <p align="center">
   <img src="readme_images/Free_associations.jpeg" alt="validation" width="400"/>
-  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing semantic contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes). [4]</small></figcaption>
+  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing semantic contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes). [5]</small></figcaption>
 </p>
 
 ### Validation of the datasets
@@ -83,11 +83,8 @@ _Abramski, K., et al. (2024). The "LLM World of Words" English free association 
 For speaking requests and enquiries, please contact:
 
 Katherine Abramski : katherine.abramski@phd.unipi.it
-
 Riccardo Improta : riccardo.improta@unitn.it
-
 Giulio Rossetti : giulio.rossetti@isti.cnr.it 
-
 Massimo Stella : massimo.stella-1@unitn.it 
 
 
