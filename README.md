@@ -31,7 +31,7 @@ Free associations have been extensively used in cognitive psychology and linguis
 
 ### Validation of the datasets
 
-The datasets were validated using data from the  [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html), which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
+The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
 
 <p align="center">
   <img src="readme_images/LDTboxplots.png" alt="validation" width="800"/>
@@ -104,7 +104,11 @@ Massimo Stella : massimo.stella-1@unitn.it
 
 [3] _De Deyne, S., et al. (2019). The “Small World of Words” English word association norms for over 12,000 cue words. Behavior research methods, 51, 987-1006._ [Small World of Words Project](https://smallworldofwords.org/en/project/)
 
-[4] _Stella, M. (2019). Modelling early word acquisition through multiplex lexical networks and machine learning. Big Data and Cognitive Computing, 3(1), 10._
+[4] _Hutchison, K. A. et al. (2013). The semantic priming project. Behavior research methods, 45, 1099-1114._ [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html)
+
+[5] _Stella, M. (2019). Modelling early word acquisition through multiplex lexical networks and machine learning. Big Data and Cognitive Computing, 3(1), 10._
+
+------
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <img src="readme_images/logo_unipi.png" alt="Unipi Logo" width="110" />
