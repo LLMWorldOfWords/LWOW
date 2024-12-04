@@ -21,7 +21,7 @@ from matplotlib.lines import Line2D
 # FA_dataGeneration.py
 
 def loadSimplifiedSWOW():
-    df_orig = pd.read_csv('./data/original_datasets/SWOW/SWOW-EN.R100.csv')
+    df_orig = pd.read_csv('./data/original_datasets/SWOW-EN.R100.csv')
     countries = pd.read_csv('./data/mapping_tables/country.csv')
     df = df_orig.copy()
     # Gender

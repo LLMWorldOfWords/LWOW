@@ -2,10 +2,7 @@ import json
 import tqdm
 import re
 from autogen import AssistantAgent
-import os
 from FA_Functions import *
-
-base_dir = os.path.dirname(os.path.dirname(__file__))
 
 # update based on LLM
 config_list = [
@@ -30,7 +27,7 @@ profiles_cues = getProfilesCues(simplifiedSWOW)
 words = [word for profiles_cues in profiles_cues for word in profiles_cues[1]]
 
 # update based on LLM
-with open(os.path.join(base_dir, 'data/original_datasets/mistral_free_associations.jsonl', "w")) as f:
+with open('./data/original_datasets/mistral_free_associations.jsonl', "w") as f:
     for word in tqdm.tqdm(words):
         
 
