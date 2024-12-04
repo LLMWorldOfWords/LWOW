@@ -58,9 +58,9 @@ models = ['Humans', 'Mistral', 'Llama3', 'Haiku']
 # Load LLM FA data and put it into a dataframe
 FA_data = {}
 FA_data['Humans'] = FA_SWOW
-FA_data['Mistral'] = FA_df(loadData('./data/original_datasets/Mistral/mistral_free_associations.jsonl'))
-FA_data['Llama3'] = FA_df(loadData('./data/original_datasets/Llama3/llama3-8b_free_associations.jsonl'))
-FA_data['Haiku'] = FA_df(loadData('./data/original_datasets/Haiku/haiku_free_associations.jsonl'))
+FA_data['Mistral'] = FA_df(loadData('./data/original_datasets/mistral_free_associations.jsonl'))
+FA_data['Llama3'] = FA_df(loadData('./data/original_datasets/llama3-8b_free_associations.jsonl'))
+FA_data['Haiku'] = FA_df(loadData('./data/original_datasets/haiku_free_associations.jsonl'))
 
 # Apply the cleaning procedure to the dataframes
 FA_clean_dfs = {}
