@@ -31,7 +31,7 @@ Free associations have been extensively used in cognitive psychology and linguis
 
 ### Validation of the datasets
 
-The datasets were validated using data from the [Semantic Priming Project] (https://www.montana.edu/attmemlab/spp.html), which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
+The datasets were validated using data from the  [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html), which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
 
 <p align="center">
   <img src="readme_images/LDTboxplots.png" alt="validation" width="800"/>
