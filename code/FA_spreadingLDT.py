@@ -31,26 +31,12 @@ modelColorPalettes = {'Humans': 'Blues',
                       'Llama3': 'Greens',
                       'Haiku': 'Purples'}
 
-# These graphs are weighted and directed, and they are NOT the CCs
-FA_graphs = pickle.load(open(os.path.join(base_dir, 'data/graphs/FA_all_graphs.pickle', 'rb')))
+# Load graphs
 models = ['Humans', 'Mistral', 'Llama3', 'Haiku']
-
-# Create full graphs but undirected versions
-FA_graphs_full = {}
-for model in models:
-    g = FA_graphs[model]
-    g = makeUndirected(g)
-    FA_graphs_full[model] = g
-
-# Create the filtered graphs by applying the WN nodes and non-idiosyncratic edge filters
-# Finally take the LCC
 FA_graphs_filt = {}
 for model in models:
-    g = FA_graphs_full.copy()[model]
-    g = WNfilter(g)
-    g = idiosynfilter(g)
-    g = CC(g)
-    FA_graphs_filt[model] = g
+    path = os.path.join(base_dir, 'data/graphs/edge_lists/FA_' + model + '_edgelist.csv')
+    FA_graphs_filt[model] = edgelist2graph(path, directed = False)
 
 ##################################################################
 
@@ -123,7 +109,7 @@ for triplet in LDT_RT_dict:
     rels.append(triplet[1])
     uns.append(triplet[2])
 primes = list(set(rels).union(set(uns)))
-pd.DataFrame({'prime':primes}).to_csv(os.path.join(base_dir, 'data/LDT_analyses/LDT_primes.csv', index = False))
+pd.DataFrame({'prime':primes}).to_csv(os.path.join(base_dir, 'data/LDT_analyses/LDT_primes.csv'), index = False)
 
 # Get the 50 triplets and save them
 LDT_50_triplets_DF = pd.DataFrame({'Target': [x[0] for x in LDT_50_triplets],
@@ -131,7 +117,7 @@ LDT_50_triplets_DF = pd.DataFrame({'Target': [x[0] for x in LDT_50_triplets],
 'Unrelated Prime': [x[2] for x in LDT_50_triplets],
 'Target-Related RT': [x[0] for x in LDT_RT_dict.values()],
 'Target-Unrelated RT': [x[1] for x in LDT_RT_dict.values()]})
-LDT_50_triplets_DF.to_csv(os.path.join(base_dir, 'data/LDT_analyses/LDT_50_triplets.csv', index = False))
+LDT_50_triplets_DF.to_csv(os.path.join(base_dir, 'data/LDT_analyses/LDT_50_triplets.csv'), index = False)
 
 # Make list of bias related words
 genderWords = ['woman', 'man',
@@ -143,7 +129,7 @@ genderWords = ['woman', 'man',
 for word in genderWords:
     if word not in nodeIntFull:
         print(word)
-pd.DataFrame({'genderWord':genderWords}).to_csv(os.path.join(base_dir, 'data/LDT_analyses/gender_primes.csv', index = False))
+pd.DataFrame({'genderWord':genderWords}).to_csv(os.path.join(base_dir, 'data/LDT_analyses/gender_primes.csv'), index = False)
 
 ###########################################################################
 
@@ -204,7 +190,7 @@ for model, d in LDT_AL_dicts.items():
     z = res.zstatistic
     effect = z / np.sqrt(len(data))
     wilxoconLDT[model] = {'p':p, 'effect': effect}
-pd.DataFrame(wilxoconLDT).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilcoxonLDT.csv', index = True))
+pd.DataFrame(wilxoconLDT).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilcoxonLDT.csv'), index = True)
 
 # Correlations for LDT analyses
 corrsLDT = {}  
@@ -215,7 +201,7 @@ for model, d in LDT_AL_dicts.items():
     AL2 =  [x[1] for x in list(d.values())]
     r, p = spearmanr(np.concatenate([AL1, AL2]), np.concatenate([RT1, RT2]))
     corrsLDT[model] = {'r': r, 'p': p}
-pd.DataFrame(corrsLDT).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrLDT.csv', index = True))
+pd.DataFrame(corrsLDT).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrLDT.csv'), index = True)
 
 
 # For gender data analyses
@@ -255,8 +241,8 @@ for model in models:
         testRes[t[0]] = {'p':p, 'effect': effect}
     wilxoconF[model] = testRes['Female-related targets']
     wilxoconM[model] = testRes['Male-related targets']
-pd.DataFrame(wilxoconF).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilxoconGenderF.csv', index = True))
-pd.DataFrame(wilxoconM).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilxoconGenderM.csv', index = True))
+pd.DataFrame(wilxoconF).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilxoconGenderF.csv'), index = True)
+pd.DataFrame(wilxoconM).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/wilxoconGenderM.csv'), index = True)
 
 
 # AL differences histograms
@@ -305,6 +291,6 @@ for model in models[1:]:
     rM, pM = spearmanr(mat1M, mat2M)
     modelsCorrM[model] = {'r': rM, 'p': pM}
 
-pd.DataFrame(modelsCorrF).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrModelsF.csv', index = True))
-pd.DataFrame(modelsCorrM).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrModelsM.csv', index = True))
+pd.DataFrame(modelsCorrF).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrModelsF.csv'), index = True)
+pd.DataFrame(modelsCorrM).to_csv(os.path.join(base_dir, 'data/LDT_analyses/Statistical_tests/corrModelsM.csv'), index = True)
 

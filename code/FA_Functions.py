@@ -178,12 +178,6 @@ def cue100(df1, unqCues):
             df = pd.concat([df, rows_to_add], ignore_index=True)
     return df
 
-# Get one row per cue (for GPT data)
-def cue1(df1):
-    df = df1.copy()
-    df = df.drop_duplicates(['cue'])
-    return df
-
 # Converts NAs to blanks
 def NA2Blank(df1):
     df = df1.copy()
@@ -292,10 +286,7 @@ def cleaningPipeline(df1, unqCues, missingDict, spelling_dict, name):
     df = AddSpaceOrHyphen(df, missingDict) # Add spaces or hyphen when one is missing
     df = Spelling(df, spelling_dict) # correct spelling of cues and responses if in spelling dictionary
     df = Lemmatization(df) # lemmatize all cues and responses
-    if 'GPT' in name:
-        df = cue1(df) # remove duplicate cues
-    else:
-        df = cue100(df, unqCues) # align data to get 100 sets of responses per cue
+    df = cue100(df, unqCues) # align data to get 100 sets of responses per cue
     df = RemoveCueResp(df) # remove responses that are equal to cues
     df = RemoveDupeResp(df) # remove duplicate responses
     df = ShiftResp(df) # align dataframe so all response are to the left
@@ -396,7 +387,7 @@ def graph2csv(g, name):
             src.append(e[0])
             tgt.append(e[1])
         df = pd.DataFrame({'src': src, 'tgt': tgt})
-    df.to_csv('./data/graphs/edge_lists/FA_' + name + '_edgelist.csv', index = False)
+    df.to_csv(os.path.join(base_dir, 'data/graphs/edge_lists/FA_' + name + '_edgelist.csv'), index = False)
 
 # Convert networkx graph to igraph and save
 def nxGraph2igraph(g, name, directed = False, weighted = False):
@@ -413,7 +404,7 @@ def nxGraph2igraph(g, name, directed = False, weighted = False):
         weights = [g[u][v]['weight'] for u, v in g.edges()]
         G_ig.es['weight'] = weights
 
-    G_ig.write_graphml('./data/graphs/igraphs/FA_' + name + '.graphml')
+    G_ig.write_graphml(os.path.join(base_dir, 'data/graphs/igraphs/FA_' + name + '.graphml'))
 
 # Make the graph undirected, taking the max weight at the edge weight
 def makeUndirected(g):
@@ -471,6 +462,16 @@ def netComparison(g1, g2):
 
 ###############################################################################
 # FA_spreadingLDT.py
+
+def edgelist2graph(path, directed = False):
+    edge_list = pd.read_csv(path)
+    edge_tuples = zip(edge_list['src'], edge_list['tgt'], edge_list['wt'])
+    if directed:
+        g = nx.DiGraph()
+    else:
+        g = nx.Graph()
+    g.add_weighted_edges_from(edge_tuples)
+    return g
 
 def normalizeDF(df, normalize_rows = False):
     cols = list(df.columns)[1:]
