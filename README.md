@@ -22,7 +22,7 @@ The "LLM World of Words" (LWOW) is a collection of datasets of English free asso
 Free associations are implicit mental connections between words or concepts. They are typically accessed by presenting humans (or AI agents) with a cue word and then asking them to respond with the first words that come to mind. The responses represent implicit associations that connect different concepts in the mind, reflecting the semantic representations that underly patterns of thought, memory, and language. For example, given the cue word "woman", a common free association response might be "man", reflecting the associative mental relation between these two concepts.
 
 <p align="center">
-  <img src="readme_images/question.png" alt="validation" width="200"/>
+  <img src="readme_images/question.png" alt="validation" width="300"/>
 
 ### How can they be used?
 Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying language and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses, as shown in the figure below. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
@@ -32,12 +32,12 @@ Free associations have been extensively used in cognitive psychology and linguis
   <figcaption><small><strong>Semantic network models built from free associations</strong>  Network models of semantic memory are often built by connecting cues to their responses. When thousands of cues and responses are connected in this way, the result is a complex network model that represents the organization of semantic knowledge.</small></figcaption>
 </p>
 
-<p align="center">
-  <img src="readme_images/Free_associations.jpeg" alt="validation" width="400"/>
-  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing semantic contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes). [5]</small></figcaption>
-</p>
+#<p align="center">
+#<img src="readme_images/Free_associations.jpeg" alt="validation" width="400"/>
+#<figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice #that associations relate with the meaning of concepts and can give rise to communities of words representing #semantic contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away #from concepts relative to containers or supports (red nodes). [5]</small></figcaption>
+#</p>
 
-### Validation of the datasets
+### Validation of the datasets with semantic priming
 
 The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with reaction time data from the lexical decision task experiment. Specifically, the activation of a target node (e.g. nurse) is higher when a related prime (e.g. doctor) is activated compared to an unrelated prime (e.g. doctrine). These results demonstrate how the LWOW datasets can be used for investigating cognitive and linguistic phenomena in LLMs, like word relatedness, demonstrating the validity of the datasets.
 
@@ -46,7 +46,7 @@ The datasets were validated using data from the [Semantic Priming Project](https
   <figcaption><small><strong>Spreading activation within semantic networks:</strong>  Semantic priming can be simulated witin a network model of semantic memory by implementing a spreading activation process within the network. The relatedness of a pair of words can be understood in terms of the final activation level of a target node (e.g. nurse) following the activation of a prime node. A target node will be more strongly activated when the prime node is related (e.g. doctor) rather than unrelated (e.g. doctrine). [5]</small></figcaption>
 </p>
 
-### Investigating gender biases in humans and LLMs
+### Investigating gender biases
 To demonstrate how this dataset can be used to investigate gender biases in LLMs compared to humans, we conducted an analysis using network models of semantic memory built from both the LWOW and the SWOW free association norms. We applied a methodology that simulates semantic priming within the networks to measure the strength of association between pairs of concepts, for example, "woman" and "forecful" vs. "man" and "forceful". This analysis revealed that certain adjectives like "forceful" and "strong" are more strongly associated with certain genders, shedding light on the types of stereotypical gender biases that both humans and LLMs possess.
 
 <p align="center">
