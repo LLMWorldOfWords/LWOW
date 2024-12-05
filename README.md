@@ -28,9 +28,7 @@ Free associations are implicit mental connections between words or concepts. The
 Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying language and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses, as shown in the figure below. When thousands of cues and responses are connected in this way, the result is a complex network model that represents the complex organization of semantic knowledge. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
 
 <p align="center">
-  <img src="readme_images/semantic_networks.02.png" alt="validation" width="800"/>
-  <figcaption><small><strong>Semantic network models built from free associations</strong>  Network models of semantic memory are often built by connecting cues to their responses. When thousands of cues and responses are connected in this way, the result is a complex network model that represents the organization of semantic knowledge.</small></figcaption>
-</p>
+  <img src="readme_images/semantic_networks.02.png" alt="validation" width="700"/>
 
 #<p align="center">
 #<img src="readme_images/Free_associations.jpeg" alt="validation" width="400"/>
