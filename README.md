@@ -25,7 +25,7 @@ Free associations are implicit mental connections between words or concepts. The
   <img src="readme_images/question.png" alt="validation" width="300"/>
 
 ### How can they be used?
-Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying language and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses, as shown in the figure below. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
+Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying language and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses, as shown in the figure below. When thousands of cues and responses are connected in this way, the result is a complex network model that represents the complex organization of semantic knowledge. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
 
 <p align="center">
   <img src="readme_images/semantic_networks.02.png" alt="validation" width="800"/>
@@ -42,7 +42,7 @@ Free associations have been extensively used in cognitive psychology and linguis
 The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with reaction time data from the lexical decision task experiment. Specifically, the activation of a target node (e.g. nurse) is higher when a related prime (e.g. doctor) is activated compared to an unrelated prime (e.g. doctrine). These results demonstrate how the LWOW datasets can be used for investigating cognitive and linguistic phenomena in LLMs, like word relatedness, demonstrating the validity of the datasets.
 
 <p align="center">
-  <img src="readme_images/spreading.png" alt="validation" width="500"/>
+  <img src="readme_images/spreading.png" alt="validation" width="300"/>
   <figcaption><small><strong>Spreading activation within semantic networks:</strong>  Semantic priming can be simulated witin a network model of semantic memory by implementing a spreading activation process within the network. The relatedness of a pair of words can be understood in terms of the final activation level of a target node (e.g. nurse) following the activation of a prime node. A target node will be more strongly activated when the prime node is related (e.g. doctor) rather than unrelated (e.g. doctrine). [5]</small></figcaption>
 </p>
 
