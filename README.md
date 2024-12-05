@@ -33,8 +33,18 @@ Free associations have been extensively used in cognitive psychology and linguis
 
 The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
 
+<p align="center">
+  <img src="readme_images/spreading.png" alt="validation" width="400"/>
+  <figcaption><small><strong>Spreading activation within semantic networks:</strong>  Semantic priming can be simulated witin a network model of semantic memory by implementing a spreading activation process within the network. The relatedness of a pair of words can be understood in terms of the final activation level of a target node (e.g. nurse) following the activation of a prime node. A target node will be more strongly activated when the prime node is related (e.g. doctor) rather than unrelated (e.g. doctrine). [5]</small></figcaption>
+</p>
+
 ### Investigating gender biases in humans and LLMs
 To demonstrate how this dataset can be used to investigate gender biases in LLMs compared to humans, we conducted an analysis using network models of semantic memory built from both the LWOW and the SWOW free association norms. We applied a methodology that simulates semantic priming within the networks to measure the strength of association between pairs of concepts, for example, "woman" and "forecful" vs. "man" and "forceful". This analysis revealed that certain adjectives like "forceful" and "strong" are more strongly associated with certain genders, shedding light on the types of stereotypical gender biases that both humans and LLMs possess.
+
+<p align="center">
+  <img src="readme_images/Llama3Heat.png" alt="validation" width="400"/>
+  <figcaption><small><strong>Spreading activation within semantic networks:</strong>  Semantic priming can be simulated witin a network model of semantic memory by implementing a spreading activation process within the network. The relatedness of a pair of words can be understood in terms of the final activation level of a target node (e.g. nurse) following the activation of a prime node. A target node will be more strongly activated when the prime node is related (e.g. doctor) rather than unrelated (e.g. doctrine). [5]</small></figcaption>
+</p>
 
 ## Technical notes
 The free associations were generated (either via API or locally, depending on the LLM) by providing each LLM with a set of cue words and the following prompt:
