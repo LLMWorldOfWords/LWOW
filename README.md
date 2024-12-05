@@ -26,8 +26,6 @@ Free associations have been extensively used in cognitive psychology and linguis
 
 <p align="center">
   <img src="readme_images/semantic_networks.02.png" alt="validation" width="400"/>
-  <figcaption><small><strong>Example of a network of free associations for English speaking toddlers:</strong>  Notice that associations relate with the meaning of concepts and can give rise to communities of words representing semantic contexts. In the above example concepts relative to bath furniture (purple nodes) cluster together away from concepts relative to containers or supports (red nodes). [5]</small></figcaption>
-</p>
 
 <p align="center">
   <img src="readme_images/Free_associations.jpeg" alt="validation" width="400"/>
@@ -36,7 +34,7 @@ Free associations have been extensively used in cognitive psychology and linguis
 
 ### Validation of the datasets
 
-The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with data from the lexical decision task experiment. These results demonstrate how the LWOW datasets can be used for investigating cognitive phenomena in LLMs, demonstrating the validity of the datasets.
+The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with reaction time data from the lexical decision task experiment. Specifically, the activation of a target node (e.g. nurse) is higher when a related prime (e.g. doctor) is activated compared to an unrelated prime (e.g. doctrine). These results demonstrate how the LWOW datasets can be used for investigating cognitive and linguistic phenomena in LLMs, like word relatedness, demonstrating the validity of the datasets.
 
 <p align="center">
   <img src="readme_images/spreading.png" alt="validation" width="500"/>
