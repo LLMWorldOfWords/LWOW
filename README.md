@@ -42,7 +42,7 @@ Free associations have been extensively used in cognitive psychology and linguis
 The datasets were validated using data from the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) [4], which implements a lexical decision task to study semantic priming effects in humans. We simulated the semantic priming effect within network models of semantic memory built from both the LWOW and the SWOW free association norms. We implemented spreading activation processes within the semantic network models, and we found that activation levels of nodes within the networks correlated significantly with reaction time data from the lexical decision task experiment. Specifically, the activation of a target node (e.g. nurse) is higher when a related prime (e.g. doctor) is activated compared to an unrelated prime (e.g. doctrine). These results demonstrate how the LWOW datasets can be used for investigating cognitive and linguistic phenomena in LLMs, like word relatedness, demonstrating the validity of the datasets.
 
 <p align="center">
-  <img src="readme_images/spreading.png" alt="validation" width="300"/>
+  <img src="readme_images/spreading.png" alt="validation" width="400"/>
   <figcaption><small><strong>Spreading activation within semantic networks:</strong>  Semantic priming can be simulated witin a network model of semantic memory by implementing a spreading activation process within the network. The relatedness of a pair of words can be understood in terms of the final activation level of a target node (e.g. nurse) following the activation of a prime node. A target node will be more strongly activated when the prime node is related (e.g. doctor) rather than unrelated (e.g. doctrine). [5]</small></figcaption>
 </p>
 
