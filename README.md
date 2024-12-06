@@ -47,7 +47,8 @@ To demonstrate how this dataset can be used to investigate gender biases in LLMs
 The free associations were generated (either via API or locally, depending on the LLM) by providing each LLM with a set of cue words and the following prompt: 
 
 ```
-You will be provided with an input word. Write the first 3 words you associate to it separated by a comma.
+You will be provided with an input word.
+Write the first 3 words you associate to it separated by a comma.
 ```
 
 This prompt was repeated 100 times for each cue word, resulting in a dataset of 11,545 unique cues words and 3,463,500 total responses for each LLM.
