@@ -64,6 +64,13 @@ Since the LWOW datasets are intended to be used in comparison to humans, we have
 
 3) Run the python file FA_build_Networks.py saved in the "reproducibility" folder. This will generate a .csv of the edge list of the semantic network constructed from the Human dataset, which will be saved in the "reproducibility/data/graphs/edge_lists" folder. Note that this python script will also regenerate the .csv files of the same edges lists of the LLM networks (the same that are can be found in the "LWOW_datasets/graphs/edge_lists" folder). This python script will also produce igraph versions of all the semantic networks.
 
+### How to reproduce the analyses
+To reproduce the analyses, follow the instructions in each script, which can be found in the "reproducibility" folder. One the SWOW dataset is saved (see instructions above), the scripts should be run in the following order:
+- FA_data_Generation.py: generates the raw LLM datasets
+- FA_data_Cleaning.py: processes the original SWOW dataset and the raw LLM datasets
+- FA_build_Networks.py: builds the semantic networks from the datasets
+- FA_analyses_LDT_Gender.py and FA_spreadr.r: implements spreading activation processes within the networks in order to validate the datasets and investigate gender biases
+- 
 ------
 
 ## Do you want to know more? Read the Preprint!
