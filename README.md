@@ -58,14 +58,14 @@ The LWOW datasets for Mistral, Llama3, and Haiku can be found in the "LWOW_datas
 
 Since the LWOW datasets are intended to be used in comparison to humans, we have further processed the original SWOW dataset to create a Human dataset that is aligned with the processing that we applied to the LWOW datasets. While this human dataset is not included in this repository due to the license of the original SWOW dataset, it can be easily reproduced by running the code provided in the "reproducibility" folder. We highly encourage you to generate this dataset as it enabales a direct comparison between humans and LLMs. The Human dataset can be generated with the following steps:
 
-1) Go to the [SWOW research page](https://smallworldofwords.org/en/project/research) and download the English processed data (SWOW-EN18 [80Mb]). Save this .csv file in the "reproducibility/data/original_datasets" folder with the following name: 'SWOW-EN.R100.csv'
+1) Go to the [SWOW research page](https://smallworldofwords.org/en/project/research) and download the English processed data (SWOW-EN18). Save this .csv file in the "reproducibility/data/original_datasets" folder.
 
 2) Run the python file FA_data_Cleaning.py saved in the "reproducibility" folder. This will generate a .csv of the processed Human dataset, which will be saved in the "reproducibility/data/processed_datasets" folder. Note that this python script will also regenerate the .csv files of the processed LWOW datasets (the same that are can be found in the "LWOW_datasets/processed_datasets" folder).
 
 3) Run the python file FA_build_Networks.py saved in the "reproducibility" folder. This will generate a .csv of the edge list of the semantic network constructed from the Human dataset, which will be saved in the "reproducibility/data/graphs/edge_lists" folder. Note that this python script will also regenerate the .csv files of the same edges lists of the LLM networks (the same that are can be found in the "LWOW_datasets/graphs/edge_lists" folder). This python script will also produce igraph versions of all the semantic networks.
 
 ### How to reproduce the data and analyses
-To reproduce the analyses, first go to the [SWOW research page](https://smallworldofwords.org/en/project/research) and download the English processed data (SWOW-EN18 [80Mb]). Save this .csv file in the "reproducibility/data/original_datasets" folder with the following name: 'SWOW-EN.R100.csv'. Then follow the instructions in each script, which can be found in the "reproducibility" folder. The scripts should be run in the following order:
+To reproduce the analyses, first go to the [SWOW research page](https://smallworldofwords.org/en/project/research) and download the English processed data (SWOW-EN18). Save this .csv file in the "reproducibility/data/original_datasets" folder. Then follow the instructions in each script, which can be found in the "reproducibility" folder. The scripts should be run in the following order:
 - FA_data_Generation.py: generates the raw LLM datasets
 - FA_data_Cleaning.py: processes the original SWOW dataset and the raw LLM datasets
 - FA_build_Networks.py: builds the semantic networks from the datasets
