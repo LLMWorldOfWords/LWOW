@@ -59,7 +59,7 @@ Since the LWOW datasets are intended to be used in comparison to humans, we have
 ### How to reproduce the data and analyses
 To reproduce the analyses, first the required external files need to be downloaded:
 - Go to the [SWOW research page](https://smallworldofwords.org/en/project/research) and download the English data SWOW-EN18. Save this .csv file with the name "SWOW-EN.R100.csv" in the "reproducibility/data/original_datasets" folder.
-- Go to the [Semantic Priming Project page](https://www.montana.edu/attmemlab/spp.html) and download the LDT Priming Data. Save this .csv file with the name "primingLDT_data.csv" in the "reproducibility/data/LDT_analyses" folder.
+- Go to the [Semantic Priming Project](https://www.montana.edu/attmemlab/spp.html) and download the LDT Priming Data. Save this .csv file with the name "primingLDT_data.csv" in the "reproducibility/data/LDT_analyses" folder.
 
 Once the files are saved in the correct folders, follow the instructions in each script, which can be found in the "reproducibility" folder. The scripts should be run in the following order:
 - **FA_data_Generation.py:** generates the raw LLM datasets
