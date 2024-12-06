@@ -43,7 +43,7 @@ To demonstrate how this dataset can be used to investigate gender biases in LLMs
   <img src="readme_images/Llama3Heat.png" alt="validation" width="700"/>
 
 
-## Dataset generation
+## Technical notes
 The free associations were generated (either via API or locally, depending on the LLM) by providing each LLM with a set of cue words and the following prompt: 
 
 ```
