@@ -22,7 +22,7 @@ The "LLM World of Words" (LWOW) is a collection of datasets of English free asso
 Free associations are implicit mental connections between words or concepts. They are typically accessed by presenting humans (or AI agents) with a cue word and then asking them to respond with the first words that come to mind. The responses represent implicit associations that connect different concepts in the mind, reflecting the semantic representations that underly patterns of thought, memory, and language. For example, given the cue word "woman", a common free association response might be "man", reflecting the associative mental relation between these two concepts.
 
 <p align="center">
-  <img src="readme_images/question.png" alt="validation" width="300"/>
+  <img src="readme_images/prompt.png" alt="validation" width="300"/>
 
 ### How can they be used?
 Free associations have been extensively used in cognitive psychology and linguistics as a tool for studying language and cognitive information processing. They provide a way for researchers to understand how conceptual knowledge is organized and accessed in the mind. Free associations are often used to built network models of semantic memory by connecting cue words to their responses, as shown in the figure below. When thousands of cues and responses are connected in this way, the result is a complex network model that represents the complex organization of semantic knowledge. Such models enable the investigation of complex cognitive processes that take place within semantic memory, and can be used to study a variety of cognitive phenomena such as language learning, creativity, personality traits, and cognitive biases.
