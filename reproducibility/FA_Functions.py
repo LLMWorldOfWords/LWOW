@@ -459,7 +459,7 @@ def netComparison(g1, g2):
     return stats
 
 ###############################################################################
-# FA_spreadingLDT.py
+# FA_analyses_LDT_Gender.py
 
 def edgelist2graph(path, directed = False):
     edge_list = pd.read_csv(path)
