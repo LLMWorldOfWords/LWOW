@@ -70,7 +70,7 @@ To reproduce the analyses, follow the instructions in each script, which can be 
 - FA_data_Cleaning.py: processes the original SWOW dataset and the raw LLM datasets
 - FA_build_Networks.py: builds the semantic networks from the datasets
 - FA_analyses_LDT_Gender.py and FA_spreadr.r: implements spreading activation processes within the networks in order to validate the datasets and investigate gender biases
-- 
+
 ------
 
 ## Do you want to know more? Read the Preprint!
