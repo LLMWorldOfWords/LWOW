@@ -87,14 +87,10 @@ Once the files are saved in the correct folders, follow the instructions in each
 ### Contacts
 
 For speaking requests and enquiries, please contact:
-
-Katherine Abramski : katherine.abramski@phd.unipi.it
-
-Riccardo Improta : riccardo.improta@unitn.it
-
-Giulio Rossetti : giulio.rossetti@isti.cnr.it 
-
-Massimo Stella : massimo.stella-1@unitn.it 
+- Katherine Abramski : katherine.abramski@phd.unipi.it
+- Riccardo Improta : riccardo.improta@unitn.it
+- Giulio Rossetti : giulio.rossetti@isti.cnr.it 
+- Massimo Stella : massimo.stella-1@unitn.it 
 
 
 ### References
